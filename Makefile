@@ -11,4 +11,6 @@ test:
 lint:
 	pylint --disable=R,C,E1120 *.py
 
+check: format lint test
+
 all: install format lint test
